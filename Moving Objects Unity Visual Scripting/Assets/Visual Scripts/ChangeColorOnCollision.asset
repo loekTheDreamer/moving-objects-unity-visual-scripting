@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: ChangeColorOnCollision
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":313.0869,"y":-61.41397},"zoom":0.65,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-539.0,"y":-354.0},"guid":"cd64baec-f3ec-43db-aca0-6592b3533548","$version":"A","$type":"Bolt.OnCollisionEnter","$id":"9"},{"type":"UnityEngine.Collider","instance":true,"static":true,"defaultValues":{"target":null},"position":{"x":-94.0,"y":-173.0},"guid":"06ca407b-5226-4076-8c8b-ba360570e404","$version":"A","$type":"Bolt.Expose","$id":"11"},{"chainable":true,"member":{"name":"materials","parameterTypes":null,"targetType":"UnityEngine.MeshRenderer","targetTypeName":"UnityEngine.MeshRenderer","$version":"A"},"defaultValues":{"target":null},"position":{"x":698.0,"y":-70.0},"guid":"32423e05-4bed-460f-ab64-6e8d0f761fa9","$version":"A","$type":"Bolt.SetMember","$id":"13"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"carBody","$type":"System.String"},"object":null},"position":{"x":-127.0,"y":307.0},"guid":"91da64dd-106a-4ae9-b83c-f2fba3019fb5","$version":"A","$type":"Bolt.GetVariable"},{"type":"System.Collections.Generic.List`1[[UnityEngine.Material,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","value":{"$content":[0,1,2],"$type":"System.Collections.Generic.List`1[[UnityEngine.Material,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"defaultValues":{},"position":{"x":237.0,"y":297.0},"guid":"e3ce607c-f7cd-43d6-bd25-389c018f00a2","$version":"A","$type":"Bolt.Literal","$id":"18"},{"chainable":false,"member":{"name":"GetComponentInChildren","parameterTypes":["System.Type"],"targetType":"UnityEngine.Component","targetTypeName":"UnityEngine.Component","$version":"A"},"defaultValues":{"target":null,"%t":{"$content":"UnityEngine.MeshRenderer","$type":"System.RuntimeType"}},"position":{"x":254.0,"y":-69.0},"guid":"4b06752f-597c-4cd7-940a-c3b3f61cae3c","$version":"A","$type":"Bolt.InvokeMember","$id":"21"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"21"},"destinationKey":"enter","guid":"a49e2ac6-f05e-4f6d-8e05-d16cc2c9a804","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"exit","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"3d7adfa2-c4f7-40e8-8e58-d9f4a5a16c0d","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"9ddabe18-e5ac-4f38-88be-1e711a2a04f7","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"output","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"1ccb6fff-a165-4874-b303-0da236520dcf","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"gameObject","destinationUnit":{"$ref":"21"},"destinationKey":"target","guid":"e71cf878-8f1b-498d-b9e3-c373bdd5ad60","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"result","destinationUnit":{"$ref":"13"},"destinationKey":"target","guid":"d3c3d5b7-6af9-4fae-8034-23dbcc55828a","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: -1991239904168531565, guid: 0e4d509c6792fba42aad5f490aade8cb, type: 3}
+    - {fileID: 2100000, guid: f17c2d3335593a148a0b6d8d1458e4e1, type: 2}
+    - {fileID: -6271897200390792742, guid: 0e4d509c6792fba42aad5f490aade8cb, type: 3}
